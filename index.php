@@ -44,7 +44,7 @@
         $mail->isHTML(true);
 
     //Attachment
-        $mail->addAttachment('img/attachment.png');
+        $mail->addAttachment('img/logo.png');
 
     //Email body
         $mail->Body = "<h1>This is h1 html heading</h1><br>
@@ -59,7 +59,7 @@
         }else{
             echo "Error..!";
         }
-        
+
     //Closing smtp connection
         $mail->smtpClose();
 ?>
