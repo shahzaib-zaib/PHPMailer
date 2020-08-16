@@ -23,10 +23,15 @@
     //Set port to connect smpt
         $mail->Port = "587";
     //Set gmail username
+        $mail->Username = "";
     //Set gmail password
+        $mail->Password = "";
     //Set email subject
+        $mail->Subject = "Test Email Using PHPMailer";
     //Set sender email
+        $mail->setFrom("");
     //Email body
+        $mail->Body = "This is plain text email body";
     //Add recipient
     //Finally send email
     //Closing smtp connection
