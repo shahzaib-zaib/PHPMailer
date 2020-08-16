@@ -29,16 +29,16 @@
         $mail->Port = "587";
 
     //Set gmail username
-        $mail->Username = "americalogodesigns@gmail.com";
+        $mail->Username = "youremailaddress";
 
     //Set gmail password
-        $mail->Password = "shahzaib123";
+        $mail->Password = "yourpassword";
 
     //Set email subject
         $mail->Subject = "Test Email Using PHPMailer";
 
     //Set sender email
-        $mail->setFrom("americalogodesigns@gmail.com");
+        $mail->setFrom("youremailaddress");
         
     //Enable HTML
         $mail->isHTML(true);
@@ -51,7 +51,7 @@
         <p>This is html paragraph</p>";
 
     //Add recipient
-        $mail->addAddress("americalogodesigns@gmail.com");
+        $mail->addAddress("youremailaddress");
 
     //Finally send email
         if ( $mail->Send()) {
